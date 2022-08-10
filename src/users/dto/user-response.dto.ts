@@ -21,9 +21,6 @@ export class UserResponseDto {
   isActive: any;
 
   @Expose()
-  vip: any;
-
-  @Expose()
   admin: any;
 
   @Expose()

@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "3523af56-e34c-4dc8-9f68-1d2337cb6669",
-		"name": "Nest Simple Back - API's",
+		"_postman_id": "b6f7a59a-37fe-489d-8041-c125ea817c0e",
+		"name": "nest-basic-back",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "18915475"
 	},
@@ -19,7 +19,7 @@
 							"urlencoded": [
 								{
 									"key": "username",
-									"value": "yuriy.myt@gmail.com",
+									"value": "test1@gmail.com",
 									"type": "text"
 								},
 								{
@@ -87,7 +87,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"firstName\": \"test2\",\n    \"lastName\": \"user\",\n    \"username\": \"test@gmail.com\",\n    \"password\": \"password123\"\n}",
+							"raw": "{\n    \"firstName\": \"Joe\",\n    \"lastName\": \"Doe\",\n    \"username\": \"test1@gmail.com\",\n    \"password\": \"password123\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -156,86 +156,9 @@
 							"query": [
 								{
 									"key": "username",
-									"value": null,
+									"value": "",
 									"disabled": true
 								}
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Profiles",
-			"item": [
-				{
-					"name": "Create Profile",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"profileImg\": \"www.google.com\",\n    \"country\": \"USA\",\n    \"state\": \"NY\",\n    \"address\": \"68th Meadow\",\n    \"phone\": \"4443331234\",\n    \"email\": \"TestEmail01@gmail.com\",\n    \"sex\": \"male\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseUrl}}/profiles/",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"profiles",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update Profile",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"profileImg\": \"www.foobarr.com\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseUrl}}/profiles/",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"profiles",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get Profile",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{baseUrl}}/profiles/",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"profiles",
-								""
 							]
 						}
 					},
@@ -266,7 +189,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Inl1cml5Lm15dEBnbWFpbC5jb20iLCJhZG1pbiI6ZmFsc2UsInZpcCI6ZmFsc2UsImlkIjoxLCJpYXQiOjE2NTg2MDE1NTgsImV4cCI6MTY1ODYwNTE1OH0.9Aqr355J4WIMRtavmSOrxD8ZBz96-3U5coX3ZDPocQg",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QxQGdtYWlsLmNvbSIsImFkbWluIjpmYWxzZSwiaWQiOjEsImlhdCI6MTY2MDE2NDU3NSwiZXhwIjoxNjYwMTY4MTc1fQ.uXWIPSXLXAA-crVEPvC56Rre8rDQPNZFDFgl4ZCat3A",
 				"type": "string"
 			}
 		]
